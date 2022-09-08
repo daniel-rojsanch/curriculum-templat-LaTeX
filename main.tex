@@ -1,0 +1,152 @@
+% Plantilla de CV
+% Daniel Rojas Sánchez
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+\setlength{\parindent}{0pt} 
+
+\usepackage{multicol}
+\usepackage[compact]{titlesec}
+
+
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{title}{HTML}{01579B}
+\definecolor{personalinfo}{HTML}{546E7A}
+\definecolor{txt}{HTML}{000000}
+
+
+\usepackage{everypage}
+\newlength\inset
+\inset=1in\relax
+% THESE ARE LaTeX DEFAULTS; CAN CHANGE IF NEEDED.
+\def\PageTopMargin{1in}
+\def\PageLeftMargin{1in}
+\newcommand\movingbox[2]{{\centering\makebox[0pt]{%
+  \colorbox{title}{\parbox{\paperwidth}%
+  {\leftskip=\inset\rightskip=\inset%
+  \begin{minipage}[t]{\dimexpr.45\paperwidth-\inset}\strut#1\end{minipage}%
+  \hspace{.1\paperwidth}%
+  \begin{minipage}[t]{\dimexpr.45\paperwidth-\inset}\strut#2\end{minipage}%
+  }}}\par}}
+\newcommand\aty[2]{%
+ \AddEverypageHook{\smash{\hspace*{\dimexpr-\PageLeftMargin-\hoffset\relax}%
+  \raisebox{\dimexpr\PageTopMargin+\voffset-#1\relax}{\colorbox{title}{%
+  \parbox{\paperwidth}{\leftskip=\inset\rightskip=\inset\strut#2}}}}}}
+
+%\aty{0.18in}{}
+\aty{10.93in}{}
+
+
+\setmonofont{Hack}[
+    Scale=1,
+    Path=./Hack/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\setromanfont{Calibri}[
+    Scale=1,
+    Path=./Calibri/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\begin{document}
+
+\rmfamily
+\color{txt}
+
+\begin{center}
+    \huge{ \textcolor{title}{\textbf{Daniel Rojas Sánchez} $|$ }\huge{\textbf{Actuario}}\\
+    \vspace{10pt}}
+  
+\normalsize{
+  \textcolor{txt}{
+    {\ttfamily }\hspace{0.1cm} drojass003@gmail.com \hspace{0.27cm} 
+    {\ttfamily }\hspace{0.1cm} https://github.com/daniel-rojsanch\hspace{0.27cm} 
+    {\ttfamily }\hspace{0.1cm} 55-32-44-00-88}\\
+ 
+    \textcolor{txt}{
+    {\ttfamily }\hspace{0.1cm} Teoloyucan, Edo.Mex\hspace{0.27cm} 
+    {\ttfamily }\hspace{0.1cm} 24 años}
+    }
+\end{center}
+
+
+\section*{\textcolor{title}{Educación \hrulefill} }
+\subsection*{Licenciatura en Actuaría \hfill {\small\textbf{2015 - 2019}} }
+Universidad Nacional Autónoma de México. Facultad de Estudios Superiores Acatlán.
+
+
+\subsection*{Diplomado en Mercadotecnia \hfill {\small\textbf{2020}} }
+Universidad Nacional Autónoma de México. Facultad de Estudios Superiores Cuautitlán
+
+\subsection*{Idiomas}
+\textbf{Inglés: }  Escritura y lectura nivel medio
+
+
+
+\section*{\textcolor{title}{Experiencia \hrulefill} } %{\ttfamily  }
+
+\subsection*{Tutor \hfill {\small\textbf{agosto 2018 - diciembre 2018}}}
+{\small \textbf{Servicio Social \hfill UNAM}}\\
+Formé parte del Programa Preventivo de Materias con Alto Índice de Reprobación, en el cual impartía clases
+a compañeros de primer semestre de Cálculo, Geometría y Álgebra, logrando bajar el índice de
+reprobación.
+
+\subsection*{Auxiliar Administrativo \hfill {\small octubre 2021 - mayo 2022}}
+{\small \textbf{Centro de Distribución Liverpool \hfill Cuautitlán, Edo.Mex}}\\
+Mis funciones consistían en la extracción de datos por medio de SAP para la creación de indicadores sobre el progreso de la operación. Dar seguimiento y solución a las incidencias presentadas en los productos. 
+
+\subsection*{Analista de Gestión de inventarios \hfill \small{julio 2022 - Actualidad }}
+{\small \textbf{Chedraui \hfill Teoloyucan, Edo.Mex}}
+\begin{multicols}{2}
+
+$\bullet$ Elaboración de reportes, indicadores.\\
+$\bullet$ Atención a solicitudes de las diferentes áreas.\\
+
+\columnbreak
+
+$\bullet$ Extracción y analisís de datos.\\
+$\bullet$ Excel, SAP, WM\\
+      \par  
+\end{multicols}
+
+
+%\subsection*{Actividad por cuenta propia \hfill {\small 2020 - 2021}}
+%{\small \textbf{Mantenimiento de equipos portátiles \hfill }}\\
+%Realizaba instalaciones de distribuciones Linux a equipos de cómputo %principalmente de gama baja, con el fin de alargar su vida útil.
+
+\section*{\textcolor{title}{Computación \hrulefill}}
+
+\subsection*{GitHub}
+
+En mi perfil de GitHub subo proyectos relacionados con el cómputo estadístico, visualización de datos, etc.
+
+\vspace{1mm}
+\subsection*{Herramientas}
+\setlength{\parskip}{1pt}
+\begin{multicols}{2}
+
+\textbf{$\bullet$ R}\\
+\textbf{$\bullet$ MS Office: } Word, PowerPoint, Excel (VBA, Tablas dinámicas).
+
+\columnbreak
+
+\textbf{$\bullet$ Bases de Datos:} MySQL, MariaBD.\\
+\textbf{$\bullet$ Otras: }RStudio, LaTeX, Linux (Ubuntu, Manjaro), Markdown. Julia, SAP, JupyterLab.
+      \par  
+\end{multicols}
+
+
+
+\end{document}
